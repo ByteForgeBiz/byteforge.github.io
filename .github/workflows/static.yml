@@ -33,7 +33,8 @@ jobs:
 
     - name: auto minify the files
       uses: nizarmah/auto-minify@v3
-      output: minified
+      with:
+        output: minified
 
     - name: auto commit the minified files
       uses: stefanzweifel/git-auto-commit-action@v5
