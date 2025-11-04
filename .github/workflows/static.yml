@@ -32,11 +32,17 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Minify HTML, CSS, and JS
-      uses: nlibdev/minify-action@v1
+      uses: pascalgn/minify-action@v0.2.0
       with:
-        source: '.'
-        destination: 'minified'
-        types: 'html,css,js'
+        directory: '.'
+        outputDirectory: 'minified'
+        filePattern: |
+          *.html
+          *.css
+          *.js
+          **/*.html
+          **/*.css
+          **/*.js
 
     - name: Upload minified artifact
       uses: actions/upload-artifact@v4
