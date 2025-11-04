@@ -31,24 +31,14 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Minify HTML, CSS, and JS
-      uses: pascalgn/minify-action@v0.2.0
-      with:
-        directory: '.'
-        outputDirectory: 'minified'
-        filePattern: |
-          *.html
-          *.css
-          *.js
-          **/*.html
-          **/*.css
-          **/*.js
+    - name: auto minify the files
+      uses: nizarmah/auto-minify@v3
+      output: minified
 
-    - name: Upload minified artifact
-      uses: actions/upload-artifact@v4
+    - name: auto commit the minified files
+      uses: stefanzweifel/git-auto-commit-action@v5
       with:
-        name: minified
-        path: minified/
+        commit_message: "bot: Add auto minified files"
 
   # Single deploy job since we're just deploying
   deploy:
