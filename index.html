@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ByteForge - Engineering the Future. Privacy-respecting, innovative software solutions.">
+    <meta name="keywords" content="ByteForge, software development, innovation, DashCam, mobile apps">
+    <meta name="author" content="ByteForge">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="ByteForge - Engineering the Future">
+    <meta property="og:description" content="Driven by innovation, powered by passion. Creating privacy-respecting software solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://byteforge.biz">
+    <meta property="og:image" content="https://byteforge.biz/assets/og-image.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ByteForge - Engineering the Future">
+    <meta name="twitter:description" content="Driven by innovation, powered by passion.">
+    <meta name="twitter:image" content="https://byteforge.biz/assets/og-image.png">
+    
+    <title>ByteForge - Engineering the Future</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="alternate icon" href="assets/favicon.ico">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    
+    <!-- AOS Animation Library (Optional) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="#home">
+                <img src="assets/logo40.png" 
+                     alt="ByteForge Anvil" 
+                     class="navbar-logo me-2">
+                <img src="assets/logoText.png"
+                     alt="ByteForge"
+                     height="40">
+            </a>
+            
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#legal">Legal</a>
+                    </li>
+                </ul>
+                
+                <!-- Dark/Light Mode Toggle (Optional) -->
+                <button class="btn btn-sm btn-outline-cyan ms-3" id="themeToggle" title="Toggle theme">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header id="home" class="hero-section d-flex align-items-center min-vh-100">
+        <div class="container text-center">
+            <div class="hero-content" data-aos="fade-up">
+                <!-- Main Headline with Typing Effect -->
+                <h1 class="display-2 fw-bold mb-4">
+                    <span id="typed-text"></span>
+                </h1>
+                
+                <!-- Subtext -->
+                <p class="lead mb-5 text-muted">
+                    Driven by innovation, powered by passion.
+                </p>
+                
+                <!-- CTA Button -->
+                <a href="#projects" class="btn btn-cyan btn-lg px-5 py-3">
+                    Explore Our Projects
+                    <i class="bi bi-arrow-down-circle ms-2"></i>
+                </a>
+            </div>
+            
+            <!-- Animated Background Elements -->
+            <div class="hero-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-4 fw-bold mb-3">Our Projects</h2>
+                <div class="divider mx-auto"></div>
+                <p class="lead text-muted mt-3">Innovation in every line of code</p>
+            </div>
+            
+            <!-- Project Cards Grid -->
+            <div class="row g-4">
+                <!-- DashCam Project Card -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card project-card h-100">
+                        <div class="card-body p-4">
+                            <div class="project-icon mb-3">
+                                <img src="assets/icon-dashcam64.png" 
+                                     alt="DashCam Icon" 
+                                     class="project-icon-img">
+                            </div>
+                            <h3 class="card-title h4 mb-3">DashCam by ByteForge</h3>
+                            <p class="card-text text-muted">
+                                Transform your smartphone into a powerful dashcam. Record your journeys with 
+                                advanced features including GPS tracking, automatic incident detection, and 
+                                cloud backup capabilities.
+                            </p>
+                            <div class="mt-4">
+                                <a href="https://play.google.com/store/apps/details?id=com.byteforge.dashcam" 
+                                   target="_blank" class="btn btn-outline-cyan">
+                                    <i class="bi bi-google-play me-2"></i>
+                                    Get on Play Store
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Future Project 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card project-card h-100 coming-soon">
+                        <div class="card-body p-4">
+                            <div class="project-icon mb-3">
+                                <i class="bi bi-shield-lock-fill"></i>
+                            </div>
+                            <h3 class="card-title h4 mb-3">SecureVault</h3>
+                            <p class="card-text text-muted">
+                                End-to-end encrypted personal data manager. Keep your sensitive information 
+                                safe with military-grade encryption and zero-knowledge architecture.
+                            </p>
+                            <div class="mt-4">
+                                <span class="btn btn-outline-cyan">Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Future Project 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card project-card h-100 coming-soon">
+                        <div class="card-body p-4">
+                            <div class="project-icon mb-3">
+                                <i class="bi bi-cpu-fill"></i>
+                            </div>
+                            <h3 class="card-title h4 mb-3">AI Assistant</h3>
+                            <p class="card-text text-muted">
+                                Privacy-first AI assistant that runs entirely on your device. No cloud, 
+                                no tracking, just intelligent assistance when you need it.
+                            </p>
+                            <div class="mt-4">
+                                <span class="btn btn-outline-cyan">In Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-dark-alt">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Text Content -->
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="display-4 fw-bold mb-4">About ByteForge</h2>
+                    <div class="divider mb-4"></div>
+                    
+                    <p class="lead mb-4">
+                        At ByteForge, we believe technology should empower, not exploit. We're dedicated to 
+                        creating innovative software solutions that respect user privacy and deliver 
+                        exceptional functionality.
+                    </p>
+                    
+                    <p class="mb-4">
+                        Founded on principles of transparency and user-first design, we engineer practical 
+                        tools that solve real problems without compromising your data or freedom.
+                    </p>
+                    
+                    <!-- Collapsible More Info -->
+                    <div class="collapse" id="moreInfo">
+                        <p class="mb-4">
+                            Our team combines decades of experience in software engineering, security, and 
+                            user experience design. We're passionate about open-source principles and believe 
+                            in building a more ethical digital future.
+                        </p>
+                        <p>
+                            Every ByteForge product is built with privacy by design, ensuring your data 
+                            stays yours. We don't track, we don't sell, we just build great software.
+                        </p>
+                    </div>
+                    
+                    <button class="btn btn-outline-cyan" type="button" data-bs-toggle="collapse" 
+                            data-bs-target="#moreInfo" aria-expanded="false" aria-controls="moreInfo">
+                        <span class="toggle-text">Learn More</span>
+                        <i class="bi bi-chevron-down ms-2"></i>
+                    </button>
+                </div>
+                
+                <!-- Visual Element -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-visual">
+                        <div class="code-block">
+                            <pre><code class="text-cyan">const byteforge = {
+    mission: "Engineering the Future",
+    values: ["Privacy", "Innovation", "Quality"],
+    approach: "User-First Design",
+    commitment: "100% Transparent"
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer / Legal Section -->
+    <footer id="legal" class="bg-dark py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-gradient fw-bold mb-3">ByteForge</h5>
+                    <p class="text-muted small">
+                        Engineering the future with privacy-respecting, innovative software solutions.
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="https://github.com/byteforge" target="_blank" class="me-3" title="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="mailto:contact@byteforge.biz" class="me-3" title="Email">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/byteforge" target="_blank" title="Twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Legal Links -->
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3">Legal</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="legal/eula.html" class="text-muted text-decoration-none">
+                                <i class="bi bi-file-text me-2"></i>End User License Agreement
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="legal/privacy-policy.html" class="text-muted text-decoration-none">
+                                <i class="bi bi-shield-check me-2"></i>Privacy Policy
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="legal/license.html" class="text-muted text-decoration-none">
+                                <i class="bi bi-file-code me-2"></i>Software License
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3">Get in Touch</h5>
+                    <p class="text-muted small">
+                        Have questions or want to collaborate? We'd love to hear from you.
+                    </p>
+                    <a href="mailto:contact@byteforge.biz" class="btn btn-outline-cyan btn-sm mt-2">
+                        <i class="bi bi-envelope me-2"></i>Contact Us
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <hr class="my-4 border-secondary">
+            <div class="text-center">
+                <p class="text-muted small mb-0">
+                    © 2025 ByteForge. All rights reserved. | Built with 
+                    <i class="bi bi-heart-fill text-cyan"></i> for the future
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="btn btn-cyan" title="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- jQuery 3.7 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Typed.js for Typing Animation -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
